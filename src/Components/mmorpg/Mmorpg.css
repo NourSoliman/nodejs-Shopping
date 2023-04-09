@@ -1,0 +1,6 @@
+.mmo-container {
+    display: flex;
+}
+.games-container {
+    flex: 1;
+}
