@@ -1,5 +1,4 @@
 import React , {useState, useEffect} from 'react'
-import WowGold from './wow'
 import WowOffer from './WowOffer'
 import Sidebar from '../Sidebar/Sidebar'
 import { ShoppingUseContext } from '../Contexts/Contexts'

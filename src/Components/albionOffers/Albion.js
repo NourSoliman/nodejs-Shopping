@@ -1,6 +1,5 @@
 import React , {useState , useEffect} from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import AlbionGold from './AlbionGold'
 import AlbionOffers from './AlbionOffers'
 const Albion = ()=> {
     const [albioncoins , setAlbionCoins] = useState([])

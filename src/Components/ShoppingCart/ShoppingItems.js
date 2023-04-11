@@ -1,39 +1,14 @@
-import React , { useState, useEffect }from 'react'
-import { Stack , Button } from 'react-bootstrap'
-// import games from '../../data/games.json'
-// import games from '../../data/Games'
-// import offers from '../wowOffers/wow'
-import {NavLink} from 'react-bootstrap'
+import React from 'react'
+import {  Button } from 'react-bootstrap'
+
 import { Buffer } from 'buffer';
 import currencyFormat from '../Info/currency'
 import {ShoppingUseContext} from '../Contexts/Contexts'
 
 const CartItems =  ({ _id, quantity })=> {
     console.log(`id` , _id);
-
     const {removeItems , allOffers } = ShoppingUseContext()
-    // const [allOffers , setAllOffers] = useState([])
-    // useEffect(()=>{
-    //     const fetchAllOffers = async() => {
-    //         try {
-    //             const response = await fetch(`http://localhost:5000/api/allOffers`)
-    //             const data = await  response.json()
-    //             setAllOffers(data)
-    //             console.log('allOffers:', data);
-    //             console.log(`type of all offers` , typeof allOffers);
-    //         }
-    //         catch(error) {
-    //             console.log(error);
-    //         }
-    //     }
-    //     fetchAllOffers()
-
-    // },[])
     console.log('quantity:', quantity);
-    // const items = games.find((item) =>item.id === id);
-    // if (items == null) return null;
-    // const items = AllOffers.find((item)=> item._id === _id);
-    // if (items == null ) return null
     const items = allOffers.find((item) => String(item._id) === String(_id));
     console.log('items:', items);
     if (!items) return null;

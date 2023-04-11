@@ -3,7 +3,6 @@ import Info from "../Info/Info"
 import {useState} from 'react'
 import './Games.css'
 import games from '../../data/Games'
-// import games from '../../data/games.json'
 import { useCookies } from 'react-cookie';
 import { ShoppingUseContext } from "../Contexts/Contexts"
 const Games = () => {

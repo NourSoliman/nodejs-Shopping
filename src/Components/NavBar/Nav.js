@@ -4,17 +4,17 @@ import { BsCart3 } from 'react-icons/bs'
 import { NavLink } from 'react-router-dom'
 import './Nav.css'
 import { ShoppingUseContext } from '../Contexts/Contexts'
-import { useState, useContext, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import LogOut from '../UserSystem/Logout'
 import { useCookies } from 'react-cookie';
 
 
 const Nav = () => {
-  const [cookies, setCookie] = useCookies(['token']);
+  const [cookies] = useCookies(['token']);
   const [toggle, setToggle] = useState(false)
   const [username, setUsername] = useState(null);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
-  const { openCart, cartQuantity, isLoggedIn, handleLogin, handleLogout } = ShoppingUseContext()
+  const { cartQuantity, isLoggedIn } = ShoppingUseContext()
 
   console.log(`isloggedin`, isLoggedIn);
   const dropMenu = () => {

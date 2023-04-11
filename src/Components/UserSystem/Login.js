@@ -2,17 +2,16 @@
 import { useCookies } from 'react-cookie';
 import {ShoppingUseContext} from '../Contexts/Contexts'
 import { NavLink } from 'react-router-dom'
-
 import "./UserSystem.css"
 const Login = () => {
-  const { handleLogin , isLoggedIn , setIsLoggedIn  } = ShoppingUseContext();
+  const { handleLogin , setIsLoggedIn  } = ShoppingUseContext();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMsg, setErrorMsg] = useState('');
   const [cookies, setCookie] = useCookies(['token']);
   const [loading , setLoading] = useState(false)
 
-
+  console.log(cookies);
   useEffect(() => {
     const token = window.localStorage.getItem('token');
     if (token) {

@@ -4,7 +4,6 @@ import { ShoppingUseContext } from '../Contexts/Contexts'
 import ShoppingItems from './ShoppingItems'
 import MoneyMethod from './MoneyMethod'
 import currencyFormat from '../Info/currency'
-// import AllOffers from './AllOffers'
 import './CheckOut.css'
 const CheckOut = () => {
     const { cartItems , allOffers  } = ShoppingUseContext()

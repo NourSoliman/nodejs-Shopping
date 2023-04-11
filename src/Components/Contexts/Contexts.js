@@ -1,6 +1,4 @@
-import { createContext, useContext, useState, useEffect, useMemo } from "react";
-import CheckOut from "../ShoppingCart/CheckOut";
-import ShoppingCart from "../ShoppingCart/ShoppingCart";
+import { createContext, useContext, useState, useEffect } from "react";
 import { useCookies } from 'react-cookie';
 const shoppingCartContext = createContext({})
 const ContextProvider = ({ children }) => {
@@ -12,7 +10,8 @@ const ContextProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(
         localStorage.getItem("isLoggedIn") === "true"
     );
-
+    console.log(show);
+    console.log(cookies);
     useEffect(() => {
         const fetchAllOffers = async () => {
             try {

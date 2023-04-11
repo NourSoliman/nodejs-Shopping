@@ -4,7 +4,7 @@ import mmorpg from './mmo'
 import MmoGames from './MmoGames.js'
 import './Mmorpg.css'
 import { ShoppingUseContext } from '../Contexts/Contexts.js'
-// import games from '../../data/mmo'
+
 const Mmorpg = () => {
     const {search} = ShoppingUseContext()
     return (

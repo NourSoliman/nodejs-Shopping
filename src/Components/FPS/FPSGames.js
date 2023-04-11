@@ -1,9 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { ShoppingUseContext } from '../Contexts/Contexts'
 const FPSGames = ({id , name , price , img, alt , path}) => {
-    const {  gamesQuantity, increament, decrement, removeItems } = ShoppingUseContext()
-    const quantity = gamesQuantity(id)
+    // const {  gamesQuantity } = ShoppingUseContext()
+    // const quantity = gamesQuantity(id)
     return (
         <div className='games-container'>
             <div className='images'>

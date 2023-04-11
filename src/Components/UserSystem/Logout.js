@@ -1,10 +1,10 @@
 
-import React , {useState} from 'react'
+import React  from 'react'
 import { useCookies } from 'react-cookie';
 import {ShoppingUseContext} from '../Contexts/Contexts'
 
 function Logout() {
-    const [cookies, setCookie, removeCookie] = useCookies(['token']);
+    const [cookies,  removeCookie] = useCookies(['token']);
     const {  handleLogoutContext  } = ShoppingUseContext();
     const handleLogOut = ( ) => {
         fetch('/api/logout', {

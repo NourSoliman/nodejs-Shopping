@@ -5,7 +5,7 @@ import {ShoppingUseContext} from '../Contexts/Contexts'
 import { NavLink } from 'react-router-dom'
 
  const SignUp = () => {
-  const {  isLoggedIn , setIsLoggedIn  } = ShoppingUseContext();
+  const {  isLoggedIn  } = ShoppingUseContext();
     const [userName , setUserName] = useState(``)
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
